@@ -1,3 +1,6 @@
+//MORE INFO & LATEST VERSION AT:
+//https://github.com/Charlcoal/MWNT-CGen
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -590,13 +593,6 @@ void MWNTube::addCatalyst(CrystalStructure structure, double radius, double dens
         elements.push_back({});
 
         vector<bool> centerContact(h, false);
-//        for(int i = 0; i < h; i++) {
-//            centerContact[i] = (centers[i] - centers[h]).magSquared() < (5 * radius * radius);
-//            cout << centerContact[i];
-//        }
-
-//        cout << endl;
-
 
         for(int i = 0; i < boundLength; i++) {
             for(int j = 0; j < boundLength; j++) {
@@ -804,6 +800,5 @@ int main()
 
 
     example.output(outputFile);
-
     outputFile.close();
 }
