@@ -470,7 +470,7 @@ int MWNTube::numAtoms() {
 }
 
 void MWNTube::output(ofstream& outputFile) {
-    outputFile << "{\n  \"chemicalJson\": 1, \n  \"atoms\": {\n    \"elements\": {\n      \"number\": [";
+    outputFile << "{\n  \"chemical json\": 1, \n  \"atoms\": {\n    \"elements\": {\n      \"number\": [";
 
     if(numAtoms() > 0) {
         for(int i = 0; i < numAtoms(); i++) {
